@@ -12,3 +12,11 @@ for i in range(len(rotazioni)):
             temp = rotazioni[j]
             rotazioni[j] = rotazioni[j + 1]
             rotazioni[j + 1] = temp
+
+
+bwt = ""
+
+for r in rotazioni:
+    bwt += r[-1] 
+
+print("BWT:", bwt)
