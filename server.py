@@ -13,3 +13,11 @@ testo = conn.recv(1024).decode()
 s = testo + "$"
 
 rotazioni = []
+
+
+for i in range(len(s)):
+    rotazioni.append(s[i:] + s[:i])
+
+rotazioni.sort()
+
+bwt = ""
