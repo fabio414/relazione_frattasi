@@ -21,3 +21,11 @@ for i in range(len(s)):
 rotazioni.sort()
 
 bwt = ""
+
+for r in rotazioni:
+    bwt += r[-1]
+
+conn.send(bwt.encode())
+
+conn.close()
+server.close()
